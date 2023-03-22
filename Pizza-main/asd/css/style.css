@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(9, 200px);
+    grid-template-rows: repeat(12, 200px);
+    
+  
+}
+
+
+
+.etlap{
+    grid-row: 3 / 11;
+    grid-column: 3 / 9;
+    background-color: rgba(235, 228, 228, 0.418);margin-right: 100px;
+}
+
+body{
+    background-image: url(/asd/kepek/background.jpeg);
+    background-repeat: repeat-y;
+    
+    
+}
+
+.menu{
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin: 50px 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/ span 3;
+    grid-row: 1;
+    font-family: 'Fasthand', cursive;
+    color: white;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    gap: 65px;
+    font-size: 25px;
+}
+#fo:hover{
+    color: green;
+    cursor: pointer;
+}
+
+#etlap:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+#info:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.icon{
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+#img{
+    width: 100px;
+    height: 100px;
+}
